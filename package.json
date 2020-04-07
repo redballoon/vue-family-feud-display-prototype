@@ -1,7 +1,12 @@
 {
-  "name": "family-feud-display-vue",
+  "name": "vue-family-feud-display-prototype",
   "version": "0.1.0",
   "private": true,
+  "author": "redballoon",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/redballoon/vue-family-feud-display-prototype.git"
+  },
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
@@ -34,7 +39,13 @@
       "plugin:vue/essential",
       "@vue/airbnb"
     ],
-    "rules": {},
+    "rules": {
+      "no-tabs": 0,
+      "indent": [
+        1,
+        "tab"
+      ]
+    },
     "parserOptions": {
       "parser": "babel-eslint"
     }
