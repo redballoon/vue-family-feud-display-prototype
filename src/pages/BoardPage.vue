@@ -86,58 +86,6 @@ export default {
 		'board-view': BoardView,
 	},
 };
-/*
-	v-if="flags.hasRoundMap"
-<section class="section">
-	<div class="container">
-
-		<h2 class="title">Round #{{roundNum}}</h2>
-
-		<div class="multiplier-container">
-			<div class="tag is-success is-large">x{{roundMap.elementMap.meta.multiplier}}</div>
-		</div>
-
-		<div class="question-container">
-			<h1 class="title">{{roundMap.elementMap.question.question}}</h1>
-		</div>
-
-		<!-- <h1 class="title">Section</h1>
-		<h2 class="subtitle">a simple container</h2> -->
-		<div class="board-view__entries">
-			<div class="columns">
-
-				<div class="entry-container column is-6"
-					v-for="answer in roundMap.elementMap.answers"
-					v-bind:key="answer.id">
-
-					<div class="entry" v-if="!answer.skip">
-
-						<div class="entry__hidden" v-if="!answer.show"></div>
-
-						<div class="entry__visible">
-							<div class="columns">
-								<div class="column is-7">
-									{{ answer.answer }}
-								</div>
-
-								<div class="column">
-									{{ answer.points }}
-								</div>
-							</div>
-						</div>
-					</div>
-
-				</div>
-			</div>
-		</div>
-
-
-		<div class="sandbox">
-			<board-view></board-view>
-		</div>
-	</div>
-</section>
-*/
 </script>
 
 <template>
