@@ -1,7 +1,7 @@
 // Not Used. Ignore.
 
 
-/* eslint-disable class-methods-use-this, no-param-reassign */
+/* eslint-disable class-methods-use-this, no-param-reassign, max-classes-per-file */
 
 // @todo: change to singleton/parser
 export const DataParser = {
@@ -18,14 +18,14 @@ export const DataParser = {
 
 	getKeys(keyStr) {
 		const keys = keyStr.split(',');
-		const keysTrimmed = keys.map(key => key.trim());
+		const keysTrimmed = keys.map((key) => key.trim());
 
 		return keysTrimmed;
 	},
 
 	getValues(data) {
-		const valueKeys = Object.keys(data).filter(key => key.indexOf('value') > -1);
-		const valueList = valueKeys.map(key => data[key]);
+		const valueKeys = Object.keys(data).filter((key) => key.indexOf('value') > -1);
+		const valueList = valueKeys.map((key) => data[key]);
 
 		return valueList;
 	},
@@ -59,11 +59,11 @@ export const RoundSheetHelper = class RoundSheetHelper {
 	}
 
 	getElements(elements) {
-		return elements.filter(element => element.primary && element.keys);
+		return elements.filter((element) => element.primary && element.keys);
 	}
 
 	getElementList(elements) {
-		return elements.map(element => DataParser.parse(element));
+		return elements.map((element) => DataParser.parse(element));
 	}
 
 	getElementMap(elementList) {
@@ -120,7 +120,7 @@ export const SheetHelper = class SheetHelper {
 	}
 
 	getSheetList(sheetList, findName) {
-		return sheetList.filter(name => name.indexOf(findName) > -1);
+		return sheetList.filter((name) => name.indexOf(findName) > -1);
 	}
 
 	getSheetMap(sheetList, data) {

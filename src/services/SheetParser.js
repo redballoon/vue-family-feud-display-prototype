@@ -77,7 +77,7 @@ const SheetParser = {
 
 		const roundMap = this.getMapFromList(data.elements, 'round');
 		const orderByName = Object.keys(roundMap);
-		const filterSelected = data.elements.filter(entry => entry.selected);
+		const filterSelected = data.elements.filter((entry) => entry.selected);
 		const selected = filterSelected.length ? filterSelected[0].round : false;
 
 		return {
@@ -88,7 +88,7 @@ const SheetParser = {
 	},
 
 	getSheetList(sheetList, findName) {
-		return sheetList.filter(name => name.indexOf(findName) > -1);
+		return sheetList.filter((name) => name.indexOf(findName) > -1);
 	},
 
 	getSheetData(sheetList, data) {

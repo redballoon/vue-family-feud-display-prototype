@@ -9,7 +9,7 @@ export default {
 		let error;
 
 		// eslint-disable-next-line no-return-assign
-		const errorHandler = e => (error = e) && false;
+		const errorHandler = (e) => (error = e) && false;
 
 		// get sheet data
 		const results = await Sheet.init({
