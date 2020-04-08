@@ -6,8 +6,7 @@ Originally created for an internal event at our office to play Family Feud Live 
 
 [ ! ] WIP: This repo is a work in progress and I still need to add an example of how the data needs to be structured in the google spreadsheet for this to work seamlessly. Please feel free to open an issue if you need this prioritized for any upcoming event.
 
-<img src="./readme-assets/dashboard-example.png" width="400" />
-<img src="./readme-assets/google-sheets-image.png" width="400" />
+<img src="./readme-assets/dashboard-example.png" width="400" /><img src="./readme-assets/google-sheets-image.png" width="400" />
 
 
 
